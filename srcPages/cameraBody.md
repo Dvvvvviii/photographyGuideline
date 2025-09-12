@@ -12,7 +12,7 @@
 
 拧开相机保护盖，在没安装镜头之前，你能看到这样一个东西：
 
-![](../assets/chapter3/cmos_sony.jpg)
+<img src="../assets/chapter3/cmos_sony.jpg" style="zoom: 33%;" />
 
 > 这个中间反着光的彩色矩形就是CMOS，相机的感光单元。
 
@@ -24,7 +24,7 @@
 
 下面就是部分相机的CMOS大小对比（画幅大小指的就是CMOS大小），从小到大，价格越来越高，只能说有钱人的世界真不一样👍
 
-![](../assets/chapter3/cmos.jpg)
+<img src="../assets/chapter3/cmos.jpg" style="zoom: 33%;" />
 
 -----------------------------------
 
@@ -72,8 +72,7 @@
 >
 > A: 也不尽然，视角范围小了，与此同时，如果想拍更远的东西，你会发现，半画幅相当于延长了焦距，反而拍的更清楚😜，有失也有得。
 
-
-![](../assets/chapter3/compare.jpg)
+<img src="../assets/chapter3/compare.jpg" style="zoom:50%;" />
 
 > 左图： 半画幅    右图：全画幅
 
@@ -83,7 +82,7 @@
 
 😥错误示范：
 
-![](../assets/chapter3/faultExample.jpg)
+<img src="../assets/chapter3/faultExample.jpg" style="zoom:50%;" />
 
 -----------------------------------
 
@@ -103,7 +102,7 @@
 
 这样一来你只负责按快门就行，我们第一个Lab之前的目标就是能按快门拍出照片来。毕竟也不考试，主打一个能用就行。
 
-![](../assets/chapter3/ops1.jpg)
+<img src="../assets/chapter3/ops1.jpg" style="zoom:50%;" />
 
 #### 3.4.2 检查储存卡
 
@@ -117,9 +116,9 @@
 
 > 就是这样一个卡
 
-![](../assets/chapter3/ops2.jpg)
+<img src="../assets/chapter3/ops2.jpg" style="zoom:50%;" />
 
-![](../assets/chapter3/ops3.jpg)
+<img src="../assets/chapter3/ops3.jpg" style="zoom:49%;" />
 
 确保里面有卡就行。没有就问问领导怎么办的事，这点事都做不好😡（误
 
