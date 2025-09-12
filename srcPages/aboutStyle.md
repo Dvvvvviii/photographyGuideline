@@ -26,8 +26,8 @@
 |                     描述                      |                             图片                             |
 | :-------------------------------------------: | :----------------------------------------------------------: |
 | 这一张就是旷野的风光，虽然后面那个云是P上去的 |              ![](./assets/chapter1/scene1.jpg)               |
-|    景大于人，图片的重心在于传达景色的美好     | <img src="../assets/chapter1/scene2.jpg" style="zoom:50%;" /> |
-|  风光也不仅仅是单指自然风光，人造的景也是景   | <img src="../assets/chapter1/scene3.jpg" style="zoom: 33%;" /> |
+|    景大于人，图片的重心在于传达景色的美好     | <img src="./assets/chapter1/scene2.jpg" style="zoom:50%;" /> |
+|  风光也不仅仅是单指自然风光，人造的景也是景   | <img src="./assets/chapter1/scene3.jpg" style="zoom: 33%;" /> |
 
 > 呐，你应该能看出来了，不同的人即使同样去拍风景，拍出的照片风格差别也很大，这里仅需了解，至于为什么会有这样的差别，差异性从哪里来我们后面再说。
 
@@ -43,10 +43,10 @@
 
 |                          描述                          |                             图片                             |
 | :----------------------------------------------------: | :----------------------------------------------------------: |
-| 构图什么的我们不在这里说，就是单纯欣赏一下其他人的作品 | <img src="../assets/chapter1/profile1.jpg" style="zoom: 33%;" /> |
-|  可以和上面那张做对比，这两张照片分别带给你了什么感觉  | <img src="../assets/chapter1/profile2.jpg" style="zoom:33%;" /> |
-|                  王家卫风格的男性人像                  | <img src="../assets/chapter1/profile3.jpg" style="zoom:33%;" /> |
-|       2019年索尼世界摄影大赛公开赛肖像组入围作品       | <img src="../assets/chapter1/profile4.jpg" style="zoom:33%;" /> |
+| 构图什么的我们不在这里说，就是单纯欣赏一下其他人的作品 | <img src="./assets/chapter1/profile1.jpg" style="zoom: 33%;" /> |
+|  可以和上面那张做对比，这两张照片分别带给你了什么感觉  | <img src="./assets/chapter1/profile2.jpg" style="zoom:33%;" /> |
+|                  王家卫风格的男性人像                  | <img src="./assets/chapter1/profile3.jpg" style="zoom:33%;" /> |
+|       2019年索尼世界摄影大赛公开赛肖像组入围作品       | <img src="./assets/chapter1/profile4.jpg" style="zoom:33%;" /> |
 
 > 作为摄影师，如果让你选一张最喜欢的去拍，你会选哪一张？
 >
@@ -64,11 +64,11 @@
 
 |                       描述                       |                             图片                             |
 | :----------------------------------------------: | :----------------------------------------------------------: |
-| 夜市里的摊主、顾客与小女孩，她们什么时候可以休息 | <img src="../assets/chapter1/humanities1.jpg" style="zoom: 33%;" /> |
-|        他们看上去好像一对情侣，玩得很开心        | <img src="../assets/chapter1/humanities2.jpg" style="zoom:33%;" /> |
-|               属于这个人的生活片段               | <img src="../assets/chapter1/humanities3.jpg" style="zoom: 50%;" /> |
-|           气氛很好，演奏的人也乐在其中           | <img src="../assets/chapter1/humanities4.jpg" style="zoom:50%;" /> |
-|    演奏完了甚至可以抽根烟，他的日常就是这样吧    | <img src="../assets/chapter1/humanities5.jpg" style="zoom:50%;" /> |
+| 夜市里的摊主、顾客与小女孩，她们什么时候可以休息 | <img src="./assets/chapter1/humanities1.jpg" style="zoom: 33%;" /> |
+|        他们看上去好像一对情侣，玩得很开心        | <img src="./assets/chapter1/humanities2.jpg" style="zoom:33%;" /> |
+|               属于这个人的生活片段               | <img src="./assets/chapter1/humanities3.jpg" style="zoom: 50%;" /> |
+|           气氛很好，演奏的人也乐在其中           | <img src="./assets/chapter1/humanities4.jpg" style="zoom:50%;" /> |
+|    演奏完了甚至可以抽根烟，他的日常就是这样吧    | <img src="./assets/chapter1/humanities5.jpg" style="zoom:50%;" /> |
 
 > 与之前两个类别不同的是，在人文摄影中，人与环境需要互相服务对方，相辅相成，缺一不可。
 
@@ -80,12 +80,12 @@
 
 在工作中，尤其是宣传工作中，往往需要很多照片作为素材，当你不幸被选为那个负责记录素材的人，就需要小小地学一点技巧，让领导满意，不过这一块不属于我擅长的区域。但后续的内容是通用的，一样可以用来在这里提高工作效率。
 
-|                             描述                             |                             图片                             |
-| :----------------------------------------------------------: | :----------------------------------------------------------: |
-| 去年的年度照片，抓拍时机以及良好的机位让他成就了这么经典的照片 | <img src="../assets/chapter1/doc1.jpg" style="zoom:33%;" />  |
-| 当有一群人的活动要记录时，把最主要的领导放在最中间总是没错的 | <img src="../assets/chapter1/doc2.jpg" style="zoom:33%;" />  |
-| 因为摆拍（非贬义）成分更多，所以拍摄主体的表情、动作和当前活动想传达的信息匹配时拍摄，比如这里他拿着玉米那么高兴，整体基调就是积极向上的，不那么严肃也能突出他亲民不是。 | <img src="../assets/chapter1/doc3.jpg" style="zoom: 67%;" /> |
-| 虽然找的都是政务类的跟拍，不过都有可取之处，我冥冥中感觉你们领导要的可能也是这个风格 | <img src="../assets/chapter1/doc4.jpg" style="zoom:67%;" />  |
+|                             描述                             |                            图片                             |
+| :----------------------------------------------------------: | :---------------------------------------------------------: |
+| 去年的年度照片，抓拍时机以及良好的机位让他成就了这么经典的照片 | <img src="./assets/chapter1/doc1.jpg" style="zoom:33%;" />  |
+| 当有一群人的活动要记录时，把最主要的领导放在最中间总是没错的 | <img src="./assets/chapter1/doc2.jpg" style="zoom:33%;" />  |
+| 因为摆拍（非贬义）成分更多，所以拍摄主体的表情、动作和当前活动想传达的信息匹配时拍摄，比如这里他拿着玉米那么高兴，整体基调就是积极向上的，不那么严肃也能突出他亲民不是。 | <img src="./assets/chapter1/doc3.jpg" style="zoom: 67%;" /> |
+| 虽然找的都是政务类的跟拍，不过都有可取之处，我冥冥中感觉你们领导要的可能也是这个风格 | <img src="./assets/chapter1/doc4.jpg" style="zoom:67%;" />  |
 
 > 会议或调研、出访中，给大领导留个C位，让照片内容可以看得出主题或者态度（比如表彰大会就拍他们笑，批评大会就拍他们皱紧眉头）
 
