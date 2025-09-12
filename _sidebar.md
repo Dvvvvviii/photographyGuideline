@@ -1,0 +1,17 @@
+<!-- docs/sidebar.md -->
+
+* [首页](./README.md)
+* [第一节  关于照片的类型和风格](./srcPages/aboutStyle.md "简单对摄影风格留个印象")
+* [第二节  光](./srcPages/light.md "光很重要")
+* [第三节  认识相机 - 机身篇](./srcPages/cameraBody.md "机身介绍")
+* [第四节  认识相机 - 镜头篇](./srcPages/cameraLens.md "镜头介绍")
+* [Lab1  简单实操](./srcPages/Lab1.md "实验1")
+* [第五节  曝光是什么](./srcPages/exposure.md "曝光以及曝光三要素")
+* [第六节  为什么我拍的图好像不符合预期](./srcPages/focalLengthAndAperture.md "焦段、光圈介绍")
+* [第七节  色彩](./srcPages/color.md "色彩与图片格式")
+* [第八节  色温与白平衡](./srcPages/colorTempAndWB.md "色温与白平衡是什么")
+* [第九节  滤镜](./srcPages/filter.md "不同品牌使用的不同风格滤镜")
+* [Lab2  学以致用](./srcPages/Lab2.md "进阶拍摄")
+* [第十节  后期工具](./srcPages/postProcessing.md "如何进行后期")
+* [第十一节  机位与构图技巧](./srcPages/composition.md "安排构图")
+* [Lab3  结课作业](./srcPages/Lab3.md "最后一次作业")
