@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>myl摄影教程</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <meta name="description" content="入门级教程">
+  <meta name="author" content="gxh">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- Docsify 核心样式 (已保留基础功能) -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  
+  <!-- 自定义光影特效 -->
+  <style>
+    :root {
+      --primary-color: #ff758f;
+      --secondary-color: #ff7eb3;
+      --accent-color: #42b983;
+      --dark-color: #2c3e50;
+      --light-color: #f8f9fa;
+      --shadow-color: rgba(0, 0, 0, 0.1);
+      --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    }
+    
+    body {
+      font-family: 'Raleway', sans-serif;
+      background-color: #fafafa;
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    
+    /* 优雅的侧边栏样式 */
+    .sidebar {
+      width: 300px;
+      background: white;
+      box-shadow: 5px 0 15px var(--shadow-color);
+      padding: 2rem 1rem;
+      transition: all 0.3s ease;
+      z-index: 1000;
+      background-image: linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,0.98));
+      backdrop-filter: blur(5px);
+    }
+    
+    .sidebar-nav {
+      padding-left: 0;
+    }
+    
+    .sidebar-nav li {
+      margin-bottom: 0.8rem;
+      list-style: none;
+      transition: all 0.3s ease;
+      border-radius: 4px;
+    }
+    
+    .sidebar-nav li:hover {
+      transform: translateX(5px);
+    }
+    
+    .sidebar-nav li a {
+      color: var(--dark-color);
+      text-decoration: none;
+      font-weight: 500;
+      display: block;
+      padding: 0.5rem 1rem;
+      border-left: 3px solid transparent;
+      transition: all 0.3s ease;
+    }
+    
+    .sidebar-nav li.active > a {
+      border-left-color: var(--primary-color);
+      color: var(--primary-color);
+      background: rgba(255, 117, 143, 0.1);
+    }
+    
+    /* 主内容区 */
+    .content {
+      margin-left: 300px;
+      padding: 3rem 4rem;
+      max-width: 900px;
+      min-height: 100vh;
+    }
+    
+    /* 标题样式 */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      margin-top: 2rem;
+      position: relative;
+    }
+    
+    h1 {
+      color: var(--dark-color);
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    h2 {
+      color: var(--dark-color);
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    /* 摄影图片特效 */
+    .markdown-section img {
+      border-radius: 8px;
+      box-shadow: 0 10px 30px -15px rgba(0,0,0,0.3);
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      margin: 2rem auto;
+      display: block;
+      max-width: 100%;
+      background-color: #fff;
+      padding: 10px;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    .markdown-section img:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px -15px rgba(0,0,0,0.2);
+    }
+    
+    /* 代码块样式 */
+    pre[data-lang]::before {
+      content: attr(data-lang);
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 10px;
+      background: rgba(0,0,0,0.1);
+      color: #fff;
+      font-size: 0.8em;
+      border-radius: 0 0 0 5px;
+    }
+    
+    /* 链接样式 */
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    a:hover {
+      color: var(--secondary-color);
+      text-decoration: underline;
+    }
+    
+    /* 精美的加载动画 */
+    #app:empty::before {
+      content: "📷 正在加载摄影的艺术世界...";
+      display: block;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.2rem;
+      color: var(--dark-color);
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0% { opacity: 0.6; }
+      50% { opacity: 1; }
+      100% { opacity: 0.6; }
+    }
+    
+    /* 响应式设计 */
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        transform: translateX(-100%);
+        z-index: 1000;
+      }
+      
+      .sidebar.show {
+        transform: translateX(0);
+      }
+      
+      .content {
+        margin-left: 0;
+        padding: 1rem;
+      }
+      
+      .sidebar-toggle {
+        display: block;
+      }
+    }
+    
+    /* 封面设计 */
+    .cover {
+      background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cover::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
+      opacity: 0.3;
+      z-index: 0;
+    }
+    
+    .cover-main {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .cover-main h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+      color: white;
+      border: none;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    
+    .cover-main p {
+      font-size: 1.5rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+    
+    /* 自定义滚动条 */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: var(--primary-color);
+      border-radius: 4px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--secondary-color);
+    }
+    
+    /* 优雅的引用块 */
+    blockquote {
+      border-left: 4px solid var(--primary-color);
+      background: rgba(255, 117, 143, 0.05);
+      padding: 1rem 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    /* 摄影提示框 */
+    .photography-tip {
+      background: rgba(66, 185, 131, 0.1);
+      border-left: 4px solid var(--accent-color);
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    .photography-tip:before {
+      content: "📸 摄影小贴士";
+      font-weight: bold;
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--accent-color);
+    }
+    
+    /* Dark模式适配 */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #121212;
+        color: #f5f5f5;
+      }
+      
+      .sidebar {
+        background-color: #1e1e1e;
+        box-shadow: 5px 0 15px rgba(0,0,0,0.3);
+      }
+      
+      .sidebar-nav li a {
+        color: #e0e0e0;
+      }
+      
+      .markdown-section img {
+        background-color: #252525;
+        border-color: rgba(255,255,255,0.05);
+      }
+      
+      blockquote {
+        background: rgba(255, 255, 255, 0.05);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="app">加载中...</div>
+
+  <script>
+    window.$docsify = {
+      name: '摄影艺术指南',
+      nameLink: '/',
+      repo: '',
+      loadSidebar: true,
+      loadNavbar: true,
+      maxLevel: 5,
+      subMaxLevel: 4,
+      mergeNavbar: true,
+      onlyCover: true,
+      auto2top: true,
+      
+      // 自定义封面
+      coverpage: {
+        "/": {
+          background: "linear-gradient(to right, #ff758f, #ff7eb3)",
+          title: "为你而作的摄影指南",
+          subTitle: "记录光影，捕捉美好",
+          logo: "📷",
+          linkLabel: "开始探索",
+          actionText: "向下滚动",
+          footer: `
+            <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">
+              用心制作的摄影教程，只为最特别的你
+            </p>
+          `
+        }
+      },
+      
+      // 搜索设置
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: '搜索',
+        noData: '未找到相关内容',
+        depth: 6
+      },
+      
+      // 字数统计
+      count: {
+        countable: true,
+        position: 'bottom',
+        fontsize: "0.9em",
+        color: 'rgba(0,0,0,0.5)',
+        language: 'chinese',
+        localization: {
+          words: "字",
+          minute: "分钟"
+        }
+      },
+      
+      // 图片放大插件配置
+      imageZoom: {
+        background: "rgba(0,0,0,0.8)"
+      },
+      
+      // 分页
+      pagination: {
+        previousText: '上一篇',
+        nextText: '下一篇',
+        crossChapter: true,
+        crossChapterText: true
+      },
+      
+      // 自定义插件 - 图片画廊效果
+      plugins: [
+        function(hook, vm) {
+          hook.doneEach(function() {
+            // 为所有图片添加灯箱效果
+            document.querySelectorAll('.markdown-section img').forEach(img => {
+              img.onclick = function() {
+                const overlay = document.createElement('div');
+                overlay.style.cssText = `
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  background: rgba(0,0,0,0.9);
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  z-index: 9999;
+                  cursor: zoom-out;
+                `;
+                
+                const largeImg = document.createElement('img');
+                largeImg.src = this.src;
+                largeImg.style.maxHeight = '90vh';
+                largeImg.style.maxWidth = '90vw';
+                
+                overlay.appendChild(largeImg);
+                document.body.appendChild(overlay);
+                
+                overlay.onclick = function() {
+                  document.body.removeChild(overlay);
+                };
+              };
+            });
+            
+            // 为H1-H3标题添加优雅的下划线
+            document.querySelectorAll('h1, h2, h3').forEach(heading => {
+              heading.style.position = 'relative';
+              heading.innerHTML = `<span style="position: relative; z-index: 2;">${heading.innerHTML}</span>`;
+            });
+          });
+        }
+      ]
+    };
+  </script>
+
+  <!-- Docsify核心 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  
+  <!-- 插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  
+  <!-- 自定义侧边栏 -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 移动端侧边栏切换按钮
+      if (window.innerWidth < 768) {
+        const sidebarToggle = document.createElement('div');
+        sidebarToggle.innerHTML = '☰';
+        sidebarToggle.style.cssText = `
+          position: fixed;
+          top: 20px;
+          left: 20px;
+          font-size: 24px;
+          cursor: pointer;
+          z-index: 1001;
+          background: white;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        `;
+        document.body.appendChild(sidebarToggle);
+        
+        sidebarToggle.onclick = function() {
+          document.querySelector('.sidebar').classList.toggle('show');
+        };
+      }
+      
+      // 优雅的侧边栏动画
+      document.querySelectorAll('.sidebar-nav li a').forEach(link => {
+        link.onmouseenter = function() {
+          this.parentNode.style.boxShadow = '0 2px 10px rgba(0,0,0,0.08)';
+        };
+        link.onmouseleave = function() {
+          this.parentNode.style.boxShadow = 'none';
+        };
+      });
+    });
+  </script>
+</body>
+</html>

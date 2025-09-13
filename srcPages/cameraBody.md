@@ -12,7 +12,8 @@
 
 拧开相机保护盖，在没安装镜头之前，你能看到这样一个东西：
 
-<img src="./assets/chapter3/cmos_sony.jpg" style="zoom: 33%;" />
+| <img src="./assets/chapter3/cmos_sony.jpg" style="zoom: 33%;" /> |
+| :----------------------------------------------------------: |
 
 > 这个中间反着光的彩色矩形就是CMOS，相机的感光单元。
 
@@ -24,7 +25,8 @@
 
 下面就是部分相机的CMOS大小对比（画幅大小指的就是CMOS大小），从小到大，价格越来越高，只能说有钱人的世界真不一样👍
 
-<img src="./assets/chapter3/cmos.jpg" style="zoom: 33%;" />
+| <img src="./assets/chapter3/cmos.jpg" style="zoom: 33%;" /> |
+| :---------------------------------------------------------: |
 
 -----------------------------------
 
@@ -72,7 +74,8 @@
 >
 > A: 也不尽然，视角范围小了，与此同时，如果想拍更远的东西，你会发现，半画幅相当于延长了焦距，反而拍的更清楚😜，有失也有得。
 
-<img src="./assets/chapter3/compare.jpg" style="zoom:50%;" />
+| <img src="./assets/chapter3/compare.jpg" style="zoom:50%;" /> |
+| :----------------------------------------------------------: |
 
 > 左图： 半画幅    右图：全画幅
 
@@ -82,7 +85,8 @@
 
 😥错误示范：
 
-<img src="./assets/chapter3/faultExample.jpg" style="zoom:50%;" />
+| <img src="./assets/chapter3/faultExample.jpg" style="zoom:50%;" /> |
+| :----------------------------------------------------------: |
 
 -----------------------------------
 
@@ -102,7 +106,8 @@
 
 这样一来你只负责按快门就可以，我们第一个Lab之前的目标就是能按快门拍出照片来。毕竟也不考试，主打一个能用就好。
 
-<img src="./assets/chapter3/ops1.jpg" style="zoom:50%;" />
+| <img src="./assets/chapter3/ops1.jpg" style="zoom:50%;" /> |
+| ---------------------------------------------------------- |
 
 #### 3.4.2 检查储存卡
 
@@ -112,21 +117,20 @@
 
 储存卡的类别可以分为SD卡、TF（microSD）卡、XQD卡、CFexpress卡等类型，**⚠️不用记！**我们这里只用SD卡就行。
 
-<img src="./assets/chapter3/SDCard.jpg" style="zoom: 150%;" />
+| <img src="./assets/chapter3/SDCard.jpg" style="zoom: 150%;" /> |
+| ------------------------------------------------------------ |
 
 > 就是这样一个卡
 
-<img src="./assets/chapter3/ops2.jpg" style="zoom:50%;" />
-
-<img src="./assets/chapter3/ops3.jpg" style="zoom:49%;" />
+| <img src="./assets/chapter3/ops2.jpg" style="zoom:50%;" /> | <img src="./assets/chapter3/ops3.jpg" style="zoom:49%;" /> |
+| :--------------------------------------------------------: | :--------------------------------------------------------: |
 
 确保里面有卡就行。没有就问问领导怎么办的事，这点事都做不好😡（误
 
 #### 3.4.3 了解按键（以佳能R8为例）
 
-<img src="./assets/chapter3/r8_btn1.jpg" style="zoom:50%;" />
-
-<img src="./assets/chapter3/r8_btn2.jpg" style="zoom:50%;" />
+| <img src="./assets/chapter3/r8_btn1.jpg" style="zoom:50%;" /> | <img src="./assets/chapter3/r8_btn2.jpg" style="zoom:50%;" /> |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
 
 其他的先不用了解，知道<font color="#2589c2">回看</font>和<font color="#2589c2">删除</font>暂时就够用了。
 
